@@ -11,7 +11,8 @@ import { defineConfig } from 'vite'
  * It is a mapping between the generated/transpiled/minified JavaScript file
  * and one or more original source files.
  * This helps debugging. If there is an error, a source map can tell you
- * the original source file location
+ * the original source file location.
+ * A sourcemap must be generated from the original script before use.
  */
 
 export default defineConfig({
