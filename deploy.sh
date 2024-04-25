@@ -9,6 +9,7 @@ GIT_BRANCH_LOCAL="deploy"
 GIT_BRANCH_REMOTE="gh-pages"
 #GIT_REPO_REMOTE="https://github.com/<Organisation>/<Project>.git"
 GIT_REPO_REMOTE="https://github.com/RoosCocolien/recipe-book"
+
 # abort on errors
 set -e
 # remove the deploy folder
