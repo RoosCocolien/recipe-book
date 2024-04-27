@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <base href="%BASE_URL%" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,17 +10,26 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <header>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/pages/about.html">About</a>
-            <a href="/pages/contact.html">Contact</a>
-        </nav>
-    </header>
+        <header class="header">
+            <nav>
+                <a href="%BASE_URL%/">Home</a>
+                <a href="%BASE_URL%/pages/about.html">About</a>
+                <a href="%BASE_URL%/pages/contact.html">Contact</a>
+            </nav>
+        </header>
     <main>
         <h1>Boilerplate</h1>
         <p class="current-date inverse"></p>
         <p class="current-date normal"></p>
+        <div class="recipes-overview">
+            <recipe-card
+                recipeTitle="Cookies"
+                ingredients="chocolate"
+                instructions="Mix all the ingredients"
+                imageSrc="%BASE_URL%/images/cookie.png"
+            ></recipe-card>
+        </div>
+        <div class="contact-card"></div>
         <img src="/images/super-hero.png" alt="A JavaScript superhero">
     </main>
   </body>

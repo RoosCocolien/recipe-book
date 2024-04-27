@@ -7,7 +7,6 @@ export class CurrentDate {
 
   render() {
     this.renderElement.textContent = `
-        ${this.date.toDateString()}
-        `
+        ${this.date.toDateString()} `
   }
 }
