@@ -16,7 +16,7 @@ import { defineConfig } from 'vite'
  */
 
 export default defineConfig({
-  base: '/recipe-book',
+  base: '/recipe-book/',
   build: {
     sourcemap: true,
     rollupOptions: {

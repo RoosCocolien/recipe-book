@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a recipe</title>
+    <link rel="stylesheet" href="/styles/addRecipe.css" />
+    <script type="module" src="src/addRecipe.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li>          
+                    <a href="/">Home</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="addRecipe.html">Add Recipe</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Add Recipe</h1>
+        <form>
+            <fieldset>
+                <legend>My recipe</legend>
+                <p>
+                    <label for="recipeTitle">
+                        Title:
+                    </label>
+                    <input id="recipeTitle" name="recipeTitle" type="text" required />
+                </p>
+                <p>
+                    <label for="recipeIngredients">
+                        Ingredients:
+                    </label>
+                    <textarea id="recipeIngredients" name="recipeIngredients" type="text" required></textarea>
+                </p>
+                <p>
+                    <label for="recipeInstructions">
+                        Instructions:
+                    </label>
+                    <textarea id="recipeInstruction" name="recipeInstruction" type="text" required></textarea>
+                </p>
+                <p>
+                    <label for="picture">Picture: </label>
+                    <input id="picture" name="image" type="text" />
+                </p>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+</body>
+</html>

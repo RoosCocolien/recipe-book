@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <base href="%BASE_URL%" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,13 +11,30 @@
   <body>
         <header class="header">
             <nav>
-                <a href="%BASE_URL%/">Home</a>
-                <a href="%BASE_URL%/pages/about.html">About</a>
-                <a href="%BASE_URL%/pages/contact.html">Contact</a>
+                <ul>
+                    <li>          
+                        <a href="/">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="%BASE_URL%pages/addRecipe.html">Add Recipe</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="%BASE_URL%pages/about.html">About</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="%BASE_URL%pages/contact.html">Contact</a>
+                    </li>
+                </ul>
             </nav>
         </header>
     <main>
-        <h1>Boilerplate</h1>
+        <h1>Recipe Book</h1>
         <p class="current-date inverse"></p>
         <p class="current-date normal"></p>
         <div class="recipes-overview">
@@ -26,7 +42,7 @@
                 recipeTitle="Cookies"
                 ingredients="chocolate"
                 instructions="Mix all the ingredients"
-                imageSrc="%BASE_URL%/images/cookie.png"
+                imageSrc="%BASE_URL%images/cookie.png"
             ></recipe-card>
         </div>
         <div class="contact-card"></div>
